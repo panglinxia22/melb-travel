@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEL TRAVEL contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../shared/main.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <!-- HERO -->
+  <section class="contact-hero-section">
+    <h1>Let’s talk.</h1>
+    <p>We know what it is like trying to arrange your travels, so we want to make it as easy as possible for you. You
+      can of course slide into our DM’s but the quickest way to get in touch with us is below
+  </section>
+  <section class="contact-section-container light-bgcolor">
+    <div class="contact-text">
+      <h3>Contact Us</h3>
+      <p>
+        <span class="material-symbols-outlined">mail</span>
+        <a>hellomelbtravel@gmail.com</a>
+      </p>
+      <p>
+        <span class="material-symbols-outlined">
+          phone_in_talk
+        </span>
+        043498854
+      </p>
+    </div>
+    <div class="contact-form-container">
+      <form class="contact-form" id="contact-form">
+
+        <label for="fname">First name:<span>*</span></label><br>
+        <input type="text" id="fname" name="fname" placeholder="John"><br>
+        <span id="fnameError" class="error"></span><br>
+
+        <label for="lname">Last name:<span>*</span></label><br>
+        <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+        <span id="lnameError" class="error"></span><br><br>
+
+        <label for="phone">Phone<span>*</span></label><br>
+        <input type="text" id="phone" name="phone" placeholder="043483232"><br>
+        <span id="phoneError" class="error"></span><br><br>
+
+        <label for="email">Email<span>*</span></label><br>
+        <input type="email" id="email" name="email" placeholder="john@gmail.com"><br>
+        <span id="emailError" class="error"></span><br><br>
+
+        <label for="message">Message<span>*</span></label><br>
+        <textarea id="message" name="message" placeholder="message" rows="6" cols="60"></textarea><br>
+        <span id="messageError" class="error"></span><br><br>
+        <!-- <input type="submit" value="Submit"> -->
+        <button class="color-button" id="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <script src="contact.js"></script>
+  <script src="../shared/main.js"></script>
+</body>
+
+</html>

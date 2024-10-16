@@ -1,0 +1,199 @@
+/* main city */
+
+.city-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.city-image {
+  width: 100%;
+  height: 420px;
+  background-image: url('../../image/melbourne.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.city-image h3,
+.city-image h1 {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+
+.city-image h1>span {
+  color: #ff8c00;
+  display: inline-block;
+}
+
+
+.typing {
+  white-space: nowrap;
+  vertical-align: middle;
+  overflow: hidden;
+  border-right: 3px solid;
+  width: 0;
+  animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+}
+
+/* Word for word output */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 80px;
+  } 
+
+  100% {
+    width: 0;
+  }
+}
+
+/* Cursor flicker effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.city-text {
+  height: 380px;
+  background: #fdf6ea;
+  padding: 20px;
+}
+
+.city-text .atrraction {
+  margin: 10px 0;
+}
+
+.city-text .atrraction li {
+  padding: 3px 0;
+}
+
+/* TOUR LIST */
+.tours-list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 30px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.tour-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tour-item-bg1 {
+  background-image: url('../../image/penguin.jpg');
+}
+
+.tour-item-bg2 {
+  background-image: url('../../image/Ocean.jpg');
+}
+
+.tour-item-bg3 {
+  background-image: url('../../image/Steam-Train.jpg');
+}
+
+.tour-item-bg4 {
+  background-image: url('../../image/mornington.jpg');
+}
+
+.tour-item-bg5 {
+  background-image: url('../../image/moon-park.jpg');
+}
+
+.tour-item-bg6 {
+  background-image: url('../../image/Brighton-Beach.jpeg');
+}
+
+.tour-item-bg7 {
+  background-image: url('../../image/werribee-zoo.jpg');
+}
+
+.tour-item-bg8 {
+  background-image: url('../../image/Geelong-Waterfront.jpg');
+}
+
+.tour-item-bg9 {
+  background-image: url('../../image/ballarat.jpg');
+}
+.tour-item-bg10 {
+  background-image: url('../../image/bendigo.jpg');
+}
+.tour-item-bg11 {
+  background-image: url('../../image/snow-mountain.jpg');
+}
+
+.tour-item-pic {
+  width: 80%;
+  height: 240px;
+  padding-left: 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  /* 半透明遮罩 */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* 混合模式 */
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tour-item-pic p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tour-item-text {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.tour-item-text p {
+  color: #504128;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+.tour-item-text .text {
+  height: 80px;
+}
+
+.tour-item-text p>img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  ;
+}
+
+.tour-item-text button {
+  margin: 10px 0 20px;
+}
+
+
+
+@media (min-width: 768px) {
+
+  /* city */
+  .city-container {
+    flex-direction: row;
+  }
+  .city-text  {
+    width: 60%;
+  }
+  /* TOUR LIST */
+  .tours-list-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}

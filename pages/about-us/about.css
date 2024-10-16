@@ -1,0 +1,86 @@
+.about-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 400px;
+  background-image: url('../../image/about-us.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.about-hero-text {
+  text-align: center;
+  padding: 30px;
+}
+
+.about-hero-text p:first-child {
+  color: #ff8c00;
+}
+
+.about-hero-text h2 {
+  margin: 10px 0 20px;
+}
+
+.about-hero-info {
+  margin-bottom: 20px;
+}
+
+/* about-action */
+.about-action-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.about-action-container h2 {
+  margin-bottom: 20px;
+}
+
+.action-step {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.action-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.action-step-item>span {
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ff8c00;
+  color: white;
+  text-align: center;
+}
+.action-step-item>h3 {
+  color: #ff8c00;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+  }
+
+  .about-hero-text {
+    width: 60%;
+  }
+
+  .action-step {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

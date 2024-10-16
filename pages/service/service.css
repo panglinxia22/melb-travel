@@ -1,0 +1,108 @@
+/* hero */
+.service-hero {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 30px;
+}
+
+.service-hero-image {
+  height: 400px;
+  width: 100%;
+  background-image: url('../../image/ballon.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.service-hero-text {
+  padding: 30px;
+}
+
+.service-hero-text .text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* service package  */
+.service-package-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.service-package-container h3 {
+  font-style: italic;
+  color: #ff8c00;
+  margin-bottom: 10px;
+}
+
+.packages-detail-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.packages-item-detail {
+  height: 150px;
+  padding: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.packages-item-bg1 {
+  background-image: url('../../image/beach.jpeg');
+}
+
+.packages-item-bg2 {
+  background-image: url('../../image/snow-mountain.jpg');
+}
+
+.packages-item-bg3 {
+  background-image: url('../../image/chinatown.jpg');
+}
+
+.packages-item-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.packages-item-image .text {
+  width: 80%;
+  background-color: #fdf6ea;
+  padding: 10px;
+
+}
+.packages-item-image .text a{
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+  /* hero */
+  .service-hero {
+    flex-direction: row;
+  }
+
+  .service-hero-text {
+    width: 60%;
+  }
+  /* service package  */
+  .packages-detail-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}

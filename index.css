@@ -1,0 +1,211 @@
+/* hero */
+.hero-container {
+  width: 100%;
+  height: 400px;
+  background-image: url('./image/cbd.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-container h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-size: 30px;
+  margin: 0 auto;
+  /* The initial length is 0 */
+  width: 0;
+  animation: typing 6s steps(30, end) infinite, blink 0.75s step-end infinite;
+}
+
+/* Word for word output */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 360px
+  }
+}
+
+/* Cursor flicker effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.hero-container p {
+  font-size: 20px;
+  margin: 10px 0 30px;
+}
+
+/* tours */
+.tours-section {
+  height: 100%;
+  background-color: #504128;
+  padding: 20px 0;
+}
+
+.tours-section h1 {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-tours-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.top-tours-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tour-item-bg1 {
+  background-image: url('./image/penguin.jpg');
+}
+
+.tour-item-bg2 {
+  background-image: url('./image/Ocean.jpg');
+}
+
+.tour-item-bg3 {
+  background-image: url('./image/Steam-Train.jpg');
+}
+
+.tour-item-pic {
+  width: 80%;
+  height: 240px;
+  padding-left: 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.tour-item-pic p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tour-item-text {
+  width: 80%;
+  padding-left: 20px;
+}
+
+.tour-item-text p {
+  color: #504128;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+.tour-item-text .text {
+  height: 80px;
+}
+
+.tour-item-text p>img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  ;
+}
+
+.tour-item-text button {
+  margin: 10px 0 20px;
+}
+
+.load-more {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+
+
+/* service */
+.service-section {
+  background-color: #fdf6ea;
+  height: 100%;
+  padding: 20px 30px;
+}
+
+.service-section h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-containner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.service-item {
+  display: flex;
+  justify-content: center;
+}
+
+.service-item img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.service-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-item-text h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+@media (min-width: 768px) {
+
+  /* hero */
+  .hero-container h2 {
+    font-size: 40px;
+  }
+
+  /* Word for word output */
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 460px
+    }
+  }
+
+  /* tours */
+  .top-tours-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* service */
+  .service-containner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

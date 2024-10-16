@@ -1,0 +1,302 @@
+/* comman style */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: oswald, Sans-serif;
+  color: #504128;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.color-button {
+  background-color: #ff8c00;
+  padding: 10px 24px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.color-button:hover {
+  background-color: #ffbd59;
+}
+
+li {
+  list-style: none;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* styles to the part of a document that has been highlighted by the user  
+  *  Remove text-shadow in selection highlight
+  * Customize the background color to match your design.
+  */
+::-moz-selection {
+  background: #ffbd59;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ffbd59;
+  text-shadow: none;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+/* Multiline exceed */
+.text-ellipsis {
+  max-height: 240px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+}
+
+/*  setting font-style as italic*/
+.font-italic {
+  font-style: italic;
+}
+
+/* main color */
+.light-color {
+  color: #fdf6ea;
+}
+
+.dark-color {
+  color: #ff8c00;
+}
+
+.light-bgcolor {
+  background-color: #fdf6ea;
+}
+
+.middle-bgcolor {
+  background-color: #ff8c00;
+}
+
+.dark-bgcolor {
+  background-color: #504128;
+}
+
+
+/* top-nav */
+.top-nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav .logo {
+  height: 50px;
+  margin: 15px 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.top-nav .logo:hover {
+  transform: scale(1.2);
+}
+
+.header-nav {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.header-nav li {
+  padding: 0 24px;
+  font-size: 18px;
+  color: #504128;
+  cursor: pointer;
+}
+
+.header-nav .page-active {
+  color: #ff8c00;
+}
+
+.header-nav li:hover {
+  color: #ff8c00;
+}
+
+.header-nav .contact-btn {
+  margin-left: 48px;
+  font-size: 14px;
+}
+
+.hamburger-menu img,
+.close-menu img {
+  width: 40px;
+  margin: 20px 30px;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu img:hover,
+.close-menu img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.hide-menu,
+.close-menu,
+.side-menu {
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+/* aside menu */
+.side-menu .menu-item-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu li {
+  border-color: #ff8c00;
+  border-top: 1px solid #ff8c00;
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+.side-menu li span {
+  font-size: 20px;
+  color: #ff8c00;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.side-menu li:hover {
+  background: #ff8c00;
+  color: white;
+}
+
+.side-menu li:hover span {
+  color: #ffffff;
+}
+
+.side-menu li>img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+/* footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fdf6ea;
+  padding: 30px;
+}
+
+.footer-map {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.company-info {
+  margin-top: 30px;
+}
+
+.footer-container .contact-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-log {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.company-info p {
+  margin-bottom: 5px;
+}
+
+.Office-hour {
+  margin-left: 100px;
+  line-height: 2
+}
+
+.touch {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.touch button {
+  margin-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+  /* top header */
+  .header-nav {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-map {
+    width: 42%;
+    max-width: 480px;
+  }
+
+  .company-info {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+  .footer-map {
+    width: 42%;
+  }
+
+  .touch {
+    margin-top: 10px;
+  }
+
+}
