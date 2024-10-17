@@ -1,4 +1,4 @@
-const words = ["Coffee", "Music", "Art", "Sport"];
+const words = ["Coffee", "Music", "Arts", "Sport"];
 let wordIndex = 0;
 const typingElement = document.getElementById('word')
 const bookBtns = document.getElementsByClassName('book')

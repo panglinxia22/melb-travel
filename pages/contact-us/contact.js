@@ -64,6 +64,6 @@ submitBtn.addEventListener('click', function (event) {
 
   // 如果验证失败，阻止表单提交
   if (isValid) {
-    alert('sumbit successfully')
+    alert('sumbit successfully, we will touch you soon!')
   }
 });

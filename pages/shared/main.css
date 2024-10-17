@@ -202,6 +202,11 @@ video {
   color: white;
 }
 
+/* Current page status */
+.side-menu-active {
+  color: #ff8c00;
+}
+
 .side-menu li:hover span {
   color: #ffffff;
 }
@@ -271,9 +276,12 @@ video {
     display: flex;
   }
 
-  .hamburger-menu {
+  .hamburger-menu,
+  .close-menu,
+  .side-menu {
     display: none;
   }
+
 
   .footer-container {
     flex-direction: row;

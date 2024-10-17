@@ -78,6 +78,7 @@ const headerLogo = document.getElementById('header-logo');
 const touchButton = document.getElementById('touch-button');
 const menubtns = document.querySelectorAll('.header-nav li');
 const downMenubtns = document.querySelectorAll('#side-menu li');
+let isSideMenu = false;
 // Gets the path to the current page
 let path = window.location.pathname;
 // Use the split() method to split the path by a slash
@@ -87,11 +88,11 @@ let lastSegment = segments.pop() || segments[segments.length - 1];
 let filename = lastSegment.replace(/\.html$/, '');
 
 // headerLogo click event
-headerLogo.addEventListener('click', function(){
+headerLogo.addEventListener('click', function () {
   redirectTo('Home');
 });
 // header get in touch button
-touchButton.addEventListener('click', function(){
+touchButton.addEventListener('click', function () {
   redirectTo('Contact Us');
 });
 // menu buttons  click event
@@ -107,15 +108,23 @@ for (let i = 0; i < menubtns.length; i++) {
 
 // downdrops menu buttons  click event
 for (let i = 0; i < downMenubtns.length; i++) {
+  // add classlist to current page
+  let currentName = getNodeText(downMenubtns[i]);
+  if (currentName === capitalizeFirstLetter(filename)) {
+    downMenubtns[i].classList.add('side-menu-active');
+  } else {
+    downMenubtns[i].classList.remove = "side-menu-active";
+  }
   downMenubtns[i].addEventListener('click', redirectTo);
 }
 
 // Click menu, navigation
 function redirectTo(param) {
-  let page = param.target && getNodeText(param) || param;
+  let page = param.target && getNodeText(param.target) || param;
   let pathname = capitalizeFirstLetter(filename);
   const basePath = pathname === "Home" ? './pages/' : '../';
   if (page === pathname) {
+    isSideMenu && closeSideMenu();
     return
   }
   switch (page) {
@@ -142,23 +151,30 @@ hamburgerMenu.addEventListener('click', () => {
   siderMenu.classList.toggle('show-menu');
   closeMenu.classList.toggle('show-menu');
   hamburgerMenu.classList.toggle('hide-menu');
+  isSideMenu = true;
+
 });
 
 // closeMenu click event
 closeMenu.addEventListener('click', () => {
+  closeSideMenu();
+});
+
+// close sideMenu function
+function closeSideMenu() {
   siderMenu.classList.remove('show-menu');
   closeMenu.classList.remove('show-menu');
   hamburgerMenu.classList.remove('hide-menu');
-});
+  isSideMenu = false;
+}
 
 // Gets the node text function
-function getNodeText(e) {
-  const parentLi = e.target;
+function getNodeText(param) {
   let nodeText = "";
-  if (!parentLi || !parentLi.childNodes) {
+  if (!param || !param.childNodes) {
     return '';
   }
-  parentLi.childNodes.forEach(node => {
+  param.childNodes.forEach(node => {
     if (node.nodeType === Node.TEXT_NODE) {
       const trimmedText = node.textContent.trim();
       if (trimmedText) {

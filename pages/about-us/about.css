@@ -66,9 +66,121 @@
   color: white;
   text-align: center;
 }
+
 .action-step-item>h3 {
   color: #ff8c00;
   margin: 10px 0;
+}
+
+/* our team */
+.about-team-section {
+  height: 100%;
+  color: white;
+  background-color: #504128;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.team-containner {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-item:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+.team-item-image {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.team-item-bg1 {
+  background-image: url('../../image/guide-team.jpg');
+}
+
+.team-item-bg2 {
+  background-image: url('../../image/community.jpg');
+}
+
+.team-item-bg3 {
+  background-image: url('../../image/reservations.jpg');
+}
+
+.team-item-bg4 {
+  background-image: url('../../image/market-team.jpg');
+}
+
+.team-item-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #504128;
+}
+
+.team-item-text h4 {
+  margin-top: 20px;
+}
+
+.team-item-text p {
+  padding: 10px 20px 20px;
+}
+
+
+/* customer section */
+.about-customer-section {
+  padding: 30px;
+}
+
+.about-customer-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.customer-item p {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* ::before or ::after Add a small triangle */
+.customer-item p::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ccc transparent transparent transparent;
+}
+
+.customer-info {
+  margin-top: 10px;
+}
+
+.customer-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
@@ -82,5 +194,47 @@
 
   .action-step {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .customer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 660px) {
+  .team-containner {
+    grid-template-columns: 1fr;
+  }
+
+  .team-item-text {
+    width: 80%;
+    min-height: 280px;
+  }
+
+  .team-item {
+    flex-direction: row;
+  }
+
+  .team-item:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .team-item-image {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+@media(min-width: 1020px) {
+  .team-containner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-item-text {
+    height: 320px;
+  }
+
+  .team-item:nth-child(even) {
+    flex-direction: row-reverse;
   }
 }
