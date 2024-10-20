@@ -10,7 +10,6 @@ for (let i = 0; i < bookBtns.length; i++) {
   });
 }
 
-
 function typeWord() {
   typingElement.innerHTML = words[wordIndex];
   typingElement.classList.add('typing');

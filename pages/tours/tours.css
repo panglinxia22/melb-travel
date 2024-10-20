@@ -49,7 +49,7 @@
 
   50% {
     width: 80px;
-  } 
+  }
 
   100% {
     width: 0;
@@ -127,9 +127,11 @@
 .tour-item-bg9 {
   background-image: url('../../image/ballarat.jpg');
 }
+
 .tour-item-bg10 {
   background-image: url('../../image/bendigo.jpg');
 }
+
 .tour-item-bg11 {
   background-image: url('../../image/snow-mountain.jpg');
 }
@@ -189,9 +191,11 @@
   .city-container {
     flex-direction: row;
   }
-  .city-text  {
+
+  .city-text {
     width: 60%;
   }
+
   /* TOUR LIST */
   .tours-list-container {
     grid-template-columns: 1fr 1fr 1fr;

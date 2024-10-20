@@ -1,8 +1,8 @@
 /**
- * main.js - Common Header, Footer Component
+ * main.js - shared Header, Footer Component
  * 
  * Description:
- * This file contains the logic and structure of the common header section and footer section for the website or application, 
+ * This file contains the logic and structure of the shared header section and footer section for the website or application, 
  * such as the navigation bar, logo,  etc.
  * This component is typically reused across all pages, serving as a fixed header.
 
@@ -79,6 +79,7 @@ const touchButton = document.getElementById('touch-button');
 const menubtns = document.querySelectorAll('.header-nav li');
 const downMenubtns = document.querySelectorAll('#side-menu li');
 let isSideMenu = false;
+
 // Gets the path to the current page
 let path = window.location.pathname;
 // Use the split() method to split the path by a slash
