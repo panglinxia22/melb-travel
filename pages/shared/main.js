@@ -32,7 +32,7 @@ header.innerHTML = `<div class="top-nav light-bgcolor">
           <img src="${getImagePath("./image/menu.png")}" alt="hamburger menu">
         </div>
         <div class="close-menu" id="close-menu">
-          <img src="${getImagePath("./image/close.png")}" alt="hamburger menu">
+          <img src="${getImagePath("./image/close.png")}" alt="close menu">
         </div>
       </div>
       <aside class="side-menu light-bgcolor" id="side-menu">
@@ -64,7 +64,7 @@ footer.innerHTML = `<img src="${getImagePath("./image/map.png")}" class="footer-
         </p>
         <div class="touch">
           <i>Want To Know More About Our Melbourne Travel?</p>
-            <button class="color-button" id="touch-button">GET IN TOUCH</button>
+            <button class="color-button" id="touch-button">ABOUT US</button>
         </div>
       </div>`;
 document.body.prepend(header);
@@ -94,7 +94,7 @@ headerLogo.addEventListener('click', function () {
 });
 // header get in touch button
 touchButton.addEventListener('click', function () {
-  redirectTo('Contact Us');
+  redirectTo('About Us');
 });
 // menu buttons  click event
 for (let i = 0; i < menubtns.length; i++) {

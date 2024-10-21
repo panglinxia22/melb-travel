@@ -1,3 +1,4 @@
+const contactForm = document.getElementById('contact-form');
 const submitBtn = document.getElementById('submit');
 const fnameInput = document.getElementById('fname');
 const lnameInput = document.getElementById('lname');
@@ -10,17 +11,18 @@ const phoneError = document.getElementById('phoneError');
 const emailError = document.getElementById('emailError');
 const messageError = document.getElementById('messageError');
 
+ // submit button click event 
 submitBtn.addEventListener('click', function (event) {
   event.preventDefault(); // Block form submission
 
-  // 清除上次的错误信息
+  // Clear the last error message
   fnameError.textContent = '';
   lnameError.textContent = '';
   phoneError.textContent = '';
   emailError.textContent = '';
   messageError.textContent = '';
 
-  // 获取输入值
+  // Get input value
   const fname = fnameInput.value.trim();
   const lname = lnameInput.value.trim();
   const phone = phoneInput.value.trim();
@@ -29,7 +31,7 @@ submitBtn.addEventListener('click', function (event) {
 
   let isValid = true;
 
-  // 验证用户名是否为空
+  // Verify that the fname lname phone is empty
   if (fname === '') {
     fnameError.textContent = 'fname is required';
     isValid = false;
@@ -53,7 +55,7 @@ submitBtn.addEventListener('click', function (event) {
     isValid = false;
   }
 
-  // 验证密码长度
+  // Verify the email format
   if (message === '') {
     messageError.textContent = 'message is required';
     isValid = false;
@@ -62,8 +64,9 @@ submitBtn.addEventListener('click', function (event) {
     isValid = false;
   }
 
-  // 如果验证失败，阻止表单提交
+  // If the form verification is successful, the form content is cleared and a prompt message is displayed
   if (isValid) {
+    contactForm.reset();
     alert('sumbit successfully, we will touch you soon!')
   }
 });
