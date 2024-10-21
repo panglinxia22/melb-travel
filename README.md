@@ -7,20 +7,20 @@ This website was built to provide a modern, user-friendly experience, highlighti
 
 
 ## Features
-Home Page: A welcoming introduction to Melbourne with links to major sections.
-Tours: A list of of Melbourne's best attractions.
-Servies: A list of main packeges of services .
-About us: Introduced our company's story, vission and our team as well as the latest customer's comments.
-Contact us: Allows users to get in touch for inquiries or support.
+-Home Page: A welcoming introduction to Melbourne with links to major sections.
+-Tours: A list of of Melbourne's best attractions.
+-Servies: A list of main packeges of services .
+-About us: Introduced our company's story, vission and our team as well as the latest customer's comments.
+-Contact us: Allows users to get in touch for inquiries or support.
 
 ## Technologies Used
-HTML5 and CSS3: For structure and styling of the website.
-JavaScript (Vanilla JS): For interactivity, dynamic content, and page navigation.
-EmailJS: For handling the contact form submissions.
-Google Fonts: Icons used throughout the website.
+-HTML5 and CSS3: For structure and styling of the website.
+-JavaScript (Vanilla JS): For interactivity, dynamic content, and page navigation.
+-Google Fonts: Icons used throughout the website.
 
 ## File Structure
-melbourne-travel-website/
+
+-melbourne-travel-website/
 │
 ├── index.html                 # Home page
 ├── pages/
