@@ -1,9 +1,10 @@
 # Melbourne Travel Website
 
-Project Overview
+Project Overview: 
+
 The Melbourne Travel Website is a web platform designed to provide users with comprehensive information about visiting Melbourne, Australia. It offers travelers an easy way to explore Melbourne’s attractions, accommodations, events, and other resources, making trip planning seamless and engaging.
 
-This website was built to provide a modern, user-friendly experience, highlighting key destinations and travel tips for those planning to visit or explore the city. The goal is to provide not only detailed information but also an aesthetically pleasing and intuitive interface.
+This website was built to provide a modern, user-friendly experience, highlighting key destinations  for those planning to visit or explore the city. The goal is to provide not only detailed information but also an aesthetically pleasing and intuitive interface.
 
 
 ## Features
