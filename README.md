@@ -20,7 +20,8 @@ This website was built to provide a modern, user-friendly experience, highlighti
 
 ## File Structure
 
-- melbourne-travel-website/
+``` 
+melbourne-travel-website/
 │
 ├── index.html                 # Home page
 ├── pages/
@@ -36,7 +37,7 @@ This website was built to provide a modern, user-friendly experience, highlighti
 ├── images/                    # Image assets
 └── README.md                  # Project documentation
 
-
+```
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request. Alternatively, you can open an issue to suggest improvements or report bugs.
 
